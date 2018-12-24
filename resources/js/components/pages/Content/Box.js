@@ -7,6 +7,8 @@ const BoxWrapper = styled.div`
     height: 480px;
     font-family: "Bai Jamjuree", sans-serif;
     background-image: url(${props => props.image});
+    background-repeat: no-repeat;
+    background-size: cover;
 `;
 
 const BoxDetail = styled.div`
@@ -19,11 +21,11 @@ const BoxDetail = styled.div`
     bottom: 0;
 `;
 
-const Box = ({ title, photo }) => {
+const Box = ({ title = null, photo }) => {
     return (
         <>
             <BoxWrapper image={photo}>
-                <BoxDetail>{title}</BoxDetail>
+                {title && <BoxDetail>{title}</BoxDetail>}
             </BoxWrapper>
         </>
     );

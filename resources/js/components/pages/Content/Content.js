@@ -7,6 +7,7 @@ import Box from "./Box";
 
 import Article1 from "../../../../images/article1.jpg";
 import Article2 from "../../../../images/article2.jpg";
+import Article3 from "../../../../images/article3.jpg";
 
 const ContentRow = styled.div`
     display: grid;
@@ -26,7 +27,6 @@ const ContentRow = styled.div`
 
 const CenterTitle = styled(Title)`
     width: 100%;
-    max-width: 400px;
     text-align: center;
 `;
 
@@ -51,13 +51,21 @@ const Content = () => {
             </ContentRow>
             <Title>Popular</Title>
             <ContentRow>
+                <Box photo={Article3} title="5 ITEM เสริมดวงประจำปี 2019" />
+            </ContentRow>
+            <CenterTitle>Gallery</CenterTitle>
+            <ContentRow>
+                <Link to="/content/1">
+                    <Box
+                        photo={Article1}
+                        title="จัดห้องฉลองคริสต์มาสง่ายๆ สไตล์ IKEA"
+                    />
+                </Link>
+
                 <Box
-                    photo={Article1}
-                    title="จัดห้องฉลองคริสต์มาสง่ายๆ สไตล์ IKEA"
-                />
-                <Box
-                    photo={Article1}
-                    title="จัดห้องฉลองคริสต์มาสง่ายๆ สไตล์ IKEA"
+                    photo={Article2}
+                    title="รีวิว : จัดบ้านหวานๆสไตล์เจ้าหญิง
+                    ด้วยงบไม่เกินหนึ่งพันบาท"
                 />
             </ContentRow>
         </>

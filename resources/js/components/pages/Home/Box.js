@@ -30,7 +30,7 @@ const BoxReccomend = styled.div`
     right: 10px;
     bottom: 0;
     padding: 0 7.5px;
-    font-size: 0.8em;
+    font-size: 0.9em;
 `;
 
 const Heart = styled.div`
