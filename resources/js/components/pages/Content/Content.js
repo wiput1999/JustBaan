@@ -49,16 +49,19 @@ const Content = () => {
                         title="จัดห้องฉลองคริสต์มาสง่ายๆ สไตล์ IKEA"
                     />
                 </Link>
-
-                <Box
-                    photo={Article2}
-                    title="รีวิว : จัดบ้านหวานๆสไตล์เจ้าหญิง
+                <Link to="/content/2">
+                    <Box
+                        photo={Article2}
+                        title="รีวิว : จัดบ้านหวานๆสไตล์เจ้าหญิง
                     ด้วยงบไม่เกินหนึ่งพันบาท"
-                />
+                    />
+                </Link>
             </ContentRow>
             <Title>Popular</Title>
             <ContentRow>
-                <Box photo={Article3} title="5 ITEM เสริมดวงประจำปี 2019" />
+                <Link to="/content/3">
+                    <Box photo={Article3} title="5 ITEM เสริมดวงประจำปี 2019" />
+                </Link>
             </ContentRow>
             <CenterTitle>Gallery</CenterTitle>
             <ContentRow>

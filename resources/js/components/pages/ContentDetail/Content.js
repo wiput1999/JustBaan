@@ -55,10 +55,10 @@ const ContentField = styled.p`
     font-size: 1.2em;
 `;
 
-const Content = ({ title }) => {
+const Content = ({ title, match }) => {
     return (
         <>
-            <Title>จัดห้องฉลองคริสต์มาสง่ายๆ สไตล์ IKEA</Title>
+            <Title>{match}จัดห้องฉลองคริสต์มาสง่ายๆ สไตล์ IKEA</Title>
 
             <ContentRow>
                 <div>

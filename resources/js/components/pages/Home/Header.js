@@ -7,6 +7,7 @@ import Feature1 from "../../../../images/feature1.jpg";
 import Feature2 from "../../../../images/feature2.jpg";
 import Feature3 from "../../../../images/feature3.jpg";
 import CoverImage from "../../../../images/header.jpg";
+import CoverLogo from "../../../../images/logo.svg";
 
 const Search = Input.Search;
 
@@ -81,7 +82,9 @@ const Header = () => {
     return (
         <>
             <TopWrapper>
-                <Logo />
+                <Logo>
+                    <Image src={CoverLogo} />
+                </Logo>
             </TopWrapper>
             <SearchBar>
                 <SearchBox
