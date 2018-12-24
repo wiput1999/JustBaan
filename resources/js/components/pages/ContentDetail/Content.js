@@ -32,6 +32,8 @@ const ProductContentRow = styled.div`
 `;
 
 const ContentRow = styled.div`
+    max-width: 1200px;
+    margin: 0 auto;
     font-family: "Bai Jamjuree", sans-serif;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -46,6 +48,7 @@ const Image = styled.img`
 `;
 
 const ContentField = styled.p`
+    max-width: 1200px;
     text-indent: 2em;
     padding: 0.5em;
     color: #000;

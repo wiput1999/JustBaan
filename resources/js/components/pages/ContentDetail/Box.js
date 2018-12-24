@@ -7,6 +7,8 @@ const BoxWrapper = styled.div`
     height: 480px;
     font-family: "Bai Jamjuree", sans-serif;
     background-image: url(${props => props.image});
+    background-repeat: no-repeat;
+    background-size: cover;
 `;
 
 const BoxDetail = styled.div`
