@@ -105,15 +105,20 @@ class Content extends Component {
                                 </ContentField>
                             </div>
                             <div>
-                                <Box
-                                    photo={Article1}
-                                    title="จัดห้องฉลองคริสต์มาสง่ายๆ สไตล์ Index"
-                                />
+                                <Link to="/content/2">
+                                    <Box
+                                        photo={Article2}
+                                        title="รีวิว :
+                                        จัดบ้านหวานๆสไตล์เจ้าหญิงด้วยงบไม่เกินหนึ่งพันบาท"
+                                    />
+                                </Link>
                                 <br />
-                                <Box
-                                    photo={Article3}
-                                    title="5 ITEM เสริมดวงประจำปี 2019"
-                                />
+                                <Link to="/content/3">
+                                    <Box
+                                        photo={Article3}
+                                        title="5 ITEM เสริมดวงประจำปี 2019"
+                                    />
+                                </Link>
                             </div>
                         </ContentRow>
                         <ProductTitle>
@@ -202,15 +207,19 @@ class Content extends Component {
                                 </ContentField>
                             </div>
                             <div>
-                                <Box
-                                    photo={Article1}
-                                    title="จัดห้องฉลองคริสต์มาสง่ายๆ สไตล์ IKEA"
-                                />
+                                <Link to="/content/1">
+                                    <Box
+                                        photo={Article1}
+                                        title="จัดห้องฉลองคริสต์มาสง่ายๆ สไตล์ IKEA"
+                                    />
+                                </Link>
                                 <br />
-                                <Box
-                                    photo={Article3}
-                                    title="5 ITEM เสริมดวงประจำปี 2019"
-                                />
+                                <Link to="/content/3">
+                                    <Box
+                                        photo={Article3}
+                                        title="5 ITEM เสริมดวงประจำปี 2019"
+                                    />
+                                </Link>
                             </div>
                         </ContentRow>
                         <ProductTitle>
@@ -323,7 +332,7 @@ class Content extends Component {
                             </div>
                         </ContentRow>
                         <ProductTitle>
-                            เฟอร์นิเจอร์ที่เกี่ยวข้องกับคริสมาสต์
+                            เฟอร์นิเจอร์ที่เกี่ยวข้องกับการเสริมดวง
                         </ProductTitle>
                         <ProductContentRow>
                             <ProductBox
