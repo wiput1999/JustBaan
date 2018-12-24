@@ -3,7 +3,9 @@ import { Layout, Row, Col, Card } from "antd";
 import styled from "styled-components";
 import Background from "../../../../images/content-banner.png";
 import White_Brusali from "../../../../images/White_brusali.png";
-import sofa from "../../../../images/sofa.jpg";
+import detail from "../../../../images/detail.png";
+import detail2 from "../../../../images/detail2.png";
+import detail3 from "../../../../images/detail3.png";
 
 const { Header, Content } = Layout;
 
@@ -106,7 +108,7 @@ const Detail = props => {
                             <Card
                                 hoverable
                                 style={{ width: 400 }}
-                                cover={<img alt="" src={sofa} />}
+                                cover={<img alt="" src={detail} />}
                             >
                                 <Card.Meta
                                     title="DEVIL เก้าอี้โมเดิร์นขาไม้"
@@ -116,7 +118,7 @@ const Detail = props => {
                             <Card
                                 hoverable
                                 style={{ width: 400 }}
-                                cover={<img alt="" src={sofa} />}
+                                cover={<img alt="" src={detail2} />}
                             >
                                 <Card.Meta
                                     title="WINNER FASHION BOX"
@@ -126,7 +128,7 @@ const Detail = props => {
                             <Card
                                 hoverable
                                 style={{ width: 400 }}
-                                cover={<img alt="" src={sofa} />}
+                                cover={<img alt="" src={detail3} />}
                             >
                                 <Card.Meta
                                     title="ที่นอน Dunlopillo"
