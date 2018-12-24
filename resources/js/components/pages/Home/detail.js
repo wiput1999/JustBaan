@@ -3,7 +3,9 @@ import { Layout, Row, Col, Card } from "antd";
 import styled from "styled-components";
 import Background from "../../../../images/content-banner.png";
 import White_Brusali from "../../../../images/White_brusali.png";
-import sofa from "../../../../images/sofa.jpg";
+import detail from "../../../../images/detail.png";
+import detail2 from "../../../../images/detail2.png";
+import detail3 from "../../../../images/detail3.png";
 
 const { Header, Content } = Layout;
 
@@ -65,7 +67,7 @@ const Detail = props => {
                                     <GreenText xs={12}>Brand</GreenText>
                                     <GreenText xs={12}>IKEA</GreenText>
                                     <GreenText xs={12}>Size</GreenText>
-                                    <GreenText xs={12}>...</GreenText>
+                                    <GreenText xs={12}>24 * 48 cm</GreenText>
                                 </Row>
                             </InfoCard>
                             <div>
@@ -92,13 +94,13 @@ const Detail = props => {
                             </Col>
                         </Row>
                         <h2 style={{ marginBottom: 20 }}>
-                            Sofa ตัวไหนเหมาะกับบ้านสไตล์แบบ...
+                            ตู้ตัวไหนเหมาะกับบ้านสไตล์แบบ...
                         </h2>
                         <Row type="flex" justify="space-between">
                             <Card
                                 hoverable
                                 style={{ width: 400 }}
-                                cover={<img alt="" src={sofa} />}
+                                cover={<img alt="" src={detail} />}
                             >
                                 <Card.Meta
                                     title="Europe Street beat"
@@ -108,7 +110,7 @@ const Detail = props => {
                             <Card
                                 hoverable
                                 style={{ width: 400 }}
-                                cover={<img alt="" src={sofa} />}
+                                cover={<img alt="" src={detail2} />}
                             >
                                 <Card.Meta
                                     title="Europe Street beat"
@@ -118,7 +120,7 @@ const Detail = props => {
                             <Card
                                 hoverable
                                 style={{ width: 400 }}
-                                cover={<img alt="" src={sofa} />}
+                                cover={<img alt="" src={detail3} />}
                             >
                                 <Card.Meta
                                     title="Europe Street beat"
