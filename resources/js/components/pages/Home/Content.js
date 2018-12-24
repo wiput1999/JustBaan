@@ -49,7 +49,7 @@ const Content = ({ title }) => {
                     photo={CoverImage}
                     name="BRUSALI บรูสซาลีโต๊ะเข้ามุม"
                     price={3290}
-                    color={["black", "white"]}
+                    color={["black", "orange"]}
                     brand="IKEA"
                     ad={false}
                     reccomend={false}

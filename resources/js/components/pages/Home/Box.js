@@ -44,6 +44,15 @@ const Image = styled.img`
     height: 30px;
 `;
 
+const Circle = styled.div`
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 0.3em;
+    display: inline-block;
+    background-color: ${props => props.color};
+`;
+
 const Box = ({
     photo,
     price,
@@ -72,6 +81,12 @@ const Box = ({
                 <BoxDetail>
                     <div>Name {name}</div>
                     <div>Price {price} Baht</div>
+                    <div>
+                        Color{" "}
+                        {color.map(c => (
+                            <Circle color={c} />
+                        ))}
+                    </div>
                     <div>Brand {brand}</div>
                 </BoxDetail>
             </BoxWrapper>
