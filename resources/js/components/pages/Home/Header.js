@@ -1,13 +1,13 @@
 import React from "react";
 import { Input } from "antd";
-import { Redirect } from "react-router-dom";
+import { Redirect, Link } from "react-router-dom";
 import styled from "styled-components";
 
 import Feature1 from "../../../../images/feature1.jpg";
 import Feature2 from "../../../../images/feature2.jpg";
 import Feature3 from "../../../../images/feature3.jpg";
 import CoverImage from "../../../../images/header.jpg";
-import CoverLogo from "../../../../images/logo.svg";
+import CoverLogo from "../../../../images/logo.png";
 
 const Search = Input.Search;
 
@@ -46,13 +46,6 @@ const SearchBox = styled(Search)`
     & > input::placeholder {
         color: #3b5042;
     }
-
-    /* line-height: 60px;
-    padding: 0 1em;
-    font-size: 2em;
-    border: none;
-    outline: none;
-    background: #d2c9c0; */
 `;
 
 const FeaturedWrapper = styled.div`
@@ -82,9 +75,11 @@ const Header = () => {
     return (
         <>
             <TopWrapper>
-                <Logo>
-                    <Image src={CoverLogo} />
-                </Logo>
+                <Link to="/">
+                    <Logo>
+                        <Image src={CoverLogo} />
+                    </Logo>
+                </Link>
             </TopWrapper>
             <SearchBar>
                 <SearchBox
