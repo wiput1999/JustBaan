@@ -11,6 +11,7 @@ class Home extends Component {
             <>
                 <Header />
                 <Content title="Christmas Season" />
+                <Content title="Promotion" />
                 <Footer />
             </>
         );
