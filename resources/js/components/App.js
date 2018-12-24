@@ -7,6 +7,7 @@ import Home from "./pages/Home/index";
 import ProductDetail from "./pages/Home/detail";
 import Content from "./pages/Content/index";
 import ContentDetail from "./pages/ContentDetail/index";
+import Search from "./pages/SearchResult/index";
 
 class App extends Component {
     render() {
@@ -17,7 +18,7 @@ class App extends Component {
                     <Route path="/content/:id" component={ContentDetail} />
                     <Route path="/content" component={Content} />
                     <Route exact path="/detail" component={ProductDetail} />
-                    {/* <Route exact path="/search" component={Search} /> */}
+                    <Route exact path="/search" component={Search} />
                 </Switch>
             </HashRouter>
         );
