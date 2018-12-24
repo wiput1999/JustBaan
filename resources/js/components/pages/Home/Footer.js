@@ -16,18 +16,8 @@ const Wrapper = styled.div`
     display: grid;
 `;
 
-const Text = styled.div`
-    color: #000;
-`;
-
 const Footer = () => {
-    return (
-        <Wrapper>
-            <Link to="/content">
-                <Text>รู้จักสไตล์ของตัวเองมากขึ้นผ่านบทความ</Text>
-            </Link>
-        </Wrapper>
-    );
+    return <Wrapper />;
 };
 
 export default Footer;

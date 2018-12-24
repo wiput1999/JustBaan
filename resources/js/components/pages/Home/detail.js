@@ -1,11 +1,14 @@
 import React, { Component } from "react";
 import { Layout, Row, Col, Card } from "antd";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Background from "../../../../images/content-banner.png";
 import White_Brusali from "../../../../images/White_brusali.png";
 import detail from "../../../../images/detail.png";
 import detail2 from "../../../../images/detail2.png";
 import detail3 from "../../../../images/detail3.png";
+import sofa from "../../../../images/sofa.jpg";
+import CoverLogo from "../../../../images/logo.png";
 
 const { Header, Content } = Layout;
 
@@ -29,14 +32,19 @@ const WhiteDot = styled.div`
     border-radius: 50%;
     display: inline-block;
 `;
+
+const Logo = styled.div`
+    background-color: #fff;
+    width: 180px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+`;
+
 const Image = styled.img`
-    height: 450px;
+    padding: 10px;
     width: 100%;
-    margin: 50px 0 0 -60px;
-    @media (max-width: 900px) {
-        margin: auto;
-        width: 70%;
-    }
+    height: auto;
 `;
 const Detail = props => {
     return (
@@ -45,7 +53,11 @@ const Detail = props => {
                 className="header"
                 style={{ height: 180, backgroundImage: `url(${Background})` }}
             >
-                <h1 style={{ color: "white", textAlign: "center" }}>LOGO</h1>
+                <Link to="/">
+                    <Logo>
+                        <Image src={CoverLogo} />
+                    </Logo>
+                </Link>
             </Header>
             <Content style={{ paddingBottom: 50 }}>
                 <Row

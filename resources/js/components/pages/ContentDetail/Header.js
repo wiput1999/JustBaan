@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import styled from "styled-components";
 
 import CoverImage from "../../../../images/header.jpg";
+import CoverLogo from "../../../../images/logo.png";
 
 const TopWrapper = styled.div`
     height: 20vh;
@@ -18,11 +20,21 @@ const Logo = styled.div`
     margin-right: auto;
 `;
 
+const Image = styled.img`
+    padding: 10px;
+    width: 100%;
+    height: auto;
+`;
+
 const Header = () => {
     return (
         <>
             <TopWrapper>
-                <Logo />
+                <Link to="/">
+                    <Logo>
+                        <Image src={CoverLogo} />
+                    </Logo>
+                </Link>
             </TopWrapper>
         </>
     );
