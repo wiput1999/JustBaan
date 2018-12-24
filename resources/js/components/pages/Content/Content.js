@@ -16,11 +16,12 @@ import Gallery5 from "../../../../images/gallery5.png";
 import Gallery6 from "../../../../images/gallery6.png";
 
 const ContentRow = styled.div`
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: auto auto auto;
     align-content: center;
     grid-gap: 1em;
-    margin: auto 1em;
 
     @media (max-width: 900px) {
         grid-template-columns: auto auto;
