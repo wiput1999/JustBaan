@@ -1,18 +1,20 @@
 import React, { Component } from "react";
-import { Button } from "antd";
 import styled from "styled-components";
-import image from "../../../../images/content-banner.png";
 
-const Banner = styled.div`
-    height: 180;
-    width: 200
-    background-image: url(${image});
-`;
+import Header from "./Header";
+import Content from "./Content";
+import Footer from "./Footer";
 
-class Index extends Component {
+class ContentPage extends Component {
     render() {
-        return <Banner />;
+        return (
+            <>
+                <Header />
+                <Content />
+                <Footer />
+            </>
+        );
     }
 }
 
-export default Index;
+export default ContentPage;
