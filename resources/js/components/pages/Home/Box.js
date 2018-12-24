@@ -18,6 +18,7 @@ const BoxCover = styled.div`
 `;
 
 const BoxDetail = styled.div`
+    color: #000;
     background-color: #bbbbbb;
     position: relative;
     font-size: 1.3em;
@@ -25,6 +26,7 @@ const BoxDetail = styled.div`
 `;
 
 const BoxReccomend = styled.div`
+    color: #000;
     background-color: #ffe24d;
     position: absolute;
     right: 10px;

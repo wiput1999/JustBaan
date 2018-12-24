@@ -8,12 +8,14 @@ import sofa from "../../../../images/sofa.jpg";
 const { Header, Content } = Layout;
 
 const InfoCard = styled.div`
+    font-family: "Bai Jamjuree", sans-serif;
     padding: 40px;
     background: #c4c4c4;
     width: 300px;
     margin-top: 50px;
 `;
 const GreenText = styled(Col)`
+    font-family: "Bai Jamjuree", sans-serif;
     color: #3b5042;
     font-size: 21px;
     margin-bottom: 10px;
@@ -65,7 +67,7 @@ const Detail = props => {
                                     <GreenText xs={12}>Brand</GreenText>
                                     <GreenText xs={12}>IKEA</GreenText>
                                     <GreenText xs={12}>Size</GreenText>
-                                    <GreenText xs={12}>...</GreenText>
+                                    <GreenText xs={12}>150 x 50 x 80</GreenText>
                                 </Row>
                             </InfoCard>
                             <div>
@@ -91,8 +93,14 @@ const Detail = props => {
                                 <p>Inspired by</p>
                             </Col>
                         </Row>
-                        <h2 style={{ marginBottom: 20 }}>
-                            Sofa ตัวไหนเหมาะกับบ้านสไตล์แบบ...
+
+                        <h2
+                            style={{
+                                marginBottom: 20,
+                                fontFamily: "Bai Jamjuree"
+                            }}
+                        >
+                            Sofa ตัวไหนเหมาะกับบ้านสไตล์คริสต์มาส
                         </h2>
                         <Row type="flex" justify="space-between">
                             <Card
@@ -101,8 +109,8 @@ const Detail = props => {
                                 cover={<img alt="" src={sofa} />}
                             >
                                 <Card.Meta
-                                    title="Europe Street beat"
-                                    description="www.instagram.com"
+                                    title="DEVIL เก้าอี้โมเดิร์นขาไม้"
+                                    description="Index"
                                 />
                             </Card>
                             <Card
@@ -111,8 +119,8 @@ const Detail = props => {
                                 cover={<img alt="" src={sofa} />}
                             >
                                 <Card.Meta
-                                    title="Europe Street beat"
-                                    description="www.instagram.com"
+                                    title="WINNER FASHION BOX"
+                                    description="IKEA"
                                 />
                             </Card>
                             <Card
@@ -121,8 +129,8 @@ const Detail = props => {
                                 cover={<img alt="" src={sofa} />}
                             >
                                 <Card.Meta
-                                    title="Europe Street beat"
-                                    description="www.instagram.com"
+                                    title="ที่นอน Dunlopillo"
+                                    description="IKEA"
                                 />
                             </Card>
                         </Row>

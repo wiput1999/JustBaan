@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 import Title from "./Title";
 import Box from "./Box";
@@ -27,33 +28,39 @@ const Content = ({ title }) => {
         <>
             <Title>{title}</Title>
             <ContentRow>
-                <Box
-                    photo={CoverImage}
-                    name="BRUSALI บรูสซาลีโต๊ะเข้ามุม"
-                    price={3290}
-                    color={["black", "white"]}
-                    brand="IKEA"
-                    ad={false}
-                    reccomend={true}
-                />
-                <Box
-                    photo={CoverImage}
-                    name="BRUSALI บรูสซาลีโต๊ะเข้ามุม"
-                    price={3290}
-                    color={["black", "white"]}
-                    brand="IKEA"
-                    ad={false}
-                    reccomend={true}
-                />
-                <Box
-                    photo={CoverImage}
-                    name="BRUSALI บรูสซาลีโต๊ะเข้ามุม"
-                    price={3290}
-                    color={["black", "orange"]}
-                    brand="IKEA"
-                    ad={false}
-                    reccomend={false}
-                />
+                <Link to="/detail">
+                    <Box
+                        photo={CoverImage}
+                        name="Melona เตียง 3.5 ฟุต"
+                        price={3290}
+                        color={["red", "white"]}
+                        brand="KONCEPT FURNITURE"
+                        ad={false}
+                        reccomend={true}
+                    />
+                </Link>
+                <Link to="/detail">
+                    <Box
+                        photo={CoverImage}
+                        name="BRUSALI บรูสซาลีโต๊ะเข้ามุม"
+                        price={13500}
+                        color={["black", "white"]}
+                        brand="Officemate"
+                        ad={false}
+                        reccomend={true}
+                    />
+                </Link>
+                <Link to="/detail">
+                    <Box
+                        photo={CoverImage}
+                        name="โต๊ะกลาง Luxury"
+                        price={9500}
+                        color={["black", "orange", "cyan"]}
+                        brand="Norhor Design"
+                        ad={false}
+                        reccomend={false}
+                    />
+                </Link>
             </ContentRow>
         </>
     );

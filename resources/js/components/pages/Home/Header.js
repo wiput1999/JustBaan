@@ -1,5 +1,6 @@
 import React from "react";
 import { Input } from "antd";
+import { Redirect } from "react-router-dom";
 import styled from "styled-components";
 
 import Feature1 from "../../../../images/feature1.jpg";
@@ -86,7 +87,7 @@ const Header = () => {
                 <SearchBox
                     size={10}
                     placeholder="ค้นหาเฟอร์นิเจอร์"
-                    onSearch={value => console.log(value)}
+                    onSearch={value => <Redirect to="/search" />}
                     enterButton
                     size="large"
                 />
