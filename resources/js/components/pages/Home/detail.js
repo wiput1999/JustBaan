@@ -25,28 +25,6 @@ const WhiteDot = styled.div`
     border-radius: 50%;
     display: inline-block;
 `;
-const FeaturedWrapper = styled.div`
-    height: 50vh;
-    background-color: #ddd;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
-    align-items: center;
-`;
-
-const Logo = styled.div`
-    background-color: #fff;
-    width: 200px;
-    height: 200px;
-    margin-left: auto;
-    margin-right: auto;
-`;
-
-const Image = styled.img`
-    padding: 10px;
-    width: 100%;
-    height: auto;
-`;
 const Detail = props => {
     return (
         <Layout>
