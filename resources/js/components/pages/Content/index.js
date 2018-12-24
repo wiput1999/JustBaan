@@ -1,11 +1,20 @@
 import React, { Component } from "react";
-import { Button } from 'antd'
-import styled from 'styled-components'
+import styled from "styled-components";
 
-class Index extends Component {
+import Header from "./Header";
+import Content from "./Content";
+import Footer from "./Footer";
+
+class ContentPage extends Component {
     render() {
-        return  <div></div>
+        return (
+            <>
+                <Header />
+                <Content />
+                <Footer />
+            </>
+        );
     }
 }
 
-export default Index;
+export default ContentPage;

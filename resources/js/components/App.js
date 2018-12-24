@@ -13,7 +13,7 @@ class App extends Component {
             <BrowserRouter>
                 <Switch>
                     <Route exact path="/" component={Home} />
-                    <Route exact path="/content" component={Content} />
+                    <Route path="/content" component={Content} />
                     <Route exact path="/detail" component={ProductDetail} />
                 </Switch>
             </BrowserRouter>
