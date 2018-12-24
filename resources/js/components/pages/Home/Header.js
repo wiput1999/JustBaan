@@ -59,8 +59,8 @@ const FeaturedWrapper = styled.div`
 
 const Logo = styled.div`
     background-color: #fff;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin-left: auto;
     margin-right: auto;
 `;
@@ -69,6 +69,34 @@ const Image = styled.img`
     padding: 10px;
     width: 100%;
     height: auto;
+`;
+
+const HeaderQuoteWrapper = styled.div`
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 160px;
+    margin: 0 auto;
+`;
+
+const HeaderQuoteText = styled.div`
+    width: 50%;
+    margin: 0 auto;
+    font-size: 2em;
+    font-family: "Bai Jamjuree", sans-serif;
+    padding: 1.5em;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+`;
+
+const Text = styled.div`
+    width: 100%;
+    font-family: "Bai Jamjuree", sans-serif;
+    color: #000;
+    font-size: 1.5em;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: -3em;
 `;
 
 const Header = () => {
@@ -80,6 +108,12 @@ const Header = () => {
                         <Image src={CoverLogo} />
                     </Logo>
                 </Link>
+                <HeaderQuoteWrapper>
+                    <HeaderQuoteText>
+                        เรื่องบ้านๆ จัดการที่เรา
+                        การแต่งบ้านของคุณจะไม่ใช่เรื่องยากอีกต่อไป
+                    </HeaderQuoteText>
+                </HeaderQuoteWrapper>
             </TopWrapper>
             <SearchBar>
                 <SearchBox
@@ -95,6 +129,9 @@ const Header = () => {
                 <Image src={Feature2} />
                 <Image src={Feature3} />
             </FeaturedWrapper>
+            <Link to="/content">
+                <Text>รู้จักสไตล์ของตัวเองมากขึ้นผ่านบทความ</Text>
+            </Link>
         </>
     );
 };
