@@ -10,7 +10,7 @@ class ContentPage extends Component {
         return (
             <>
                 <Header />
-                <Content />
+                <Content params={this.props.match.params} />
                 <Footer />
             </>
         );

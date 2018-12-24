@@ -5,7 +5,12 @@ import { Link } from "react-router-dom";
 import Title from "./Title";
 import Box from "./Box";
 
-import CoverImage from "../../../../images/sample.jpg";
+import CoverImage1 from "../../../../images/sample1.jpg";
+import CoverImage2 from "../../../../images/sample2.jpg";
+import CoverImage3 from "../../../../images/sample3.jpg";
+import CoverImage4 from "../../../../images/sample4.jpg";
+import CoverImage5 from "../../../../images/sample5.jpg";
+import CoverImage6 from "../../../../images/sample6.jpg";
 
 const ContentRow = styled.div`
     display: grid;
@@ -24,46 +29,92 @@ const ContentRow = styled.div`
 `;
 
 const Content = ({ title }) => {
-    return (
-        <>
-            <Title>{title}</Title>
-            <ContentRow>
-                <Link to="/detail">
-                    <Box
-                        photo={CoverImage}
-                        name="Melona เตียง 3.5 ฟุต"
-                        price={3290}
-                        color={["red", "white"]}
-                        brand="KONCEPT FURNITURE"
-                        ad={false}
-                        reccomend={true}
-                    />
-                </Link>
-                <Link to="/detail">
-                    <Box
-                        photo={CoverImage}
-                        name="BRUSALI บรูสซาลีโต๊ะเข้ามุม"
-                        price={13500}
-                        color={["black", "white"]}
-                        brand="Officemate"
-                        ad={false}
-                        reccomend={true}
-                    />
-                </Link>
-                <Link to="/detail">
-                    <Box
-                        photo={CoverImage}
-                        name="โต๊ะกลาง Luxury"
-                        price={9500}
-                        color={["black", "orange", "cyan"]}
-                        brand="Norhor Design"
-                        ad={false}
-                        reccomend={false}
-                    />
-                </Link>
-            </ContentRow>
-        </>
-    );
+    switch (title) {
+        case "Christmas Season":
+            return (
+                <>
+                    <Title>{title}</Title>
+                    <ContentRow>
+                        <Link to="/detail">
+                            <Box
+                                photo={CoverImage1}
+                                name="BRUSALI บรูสซาลีโต๊ะเข้ามุม"
+                                price={3290}
+                                color={["black"]}
+                                brand="KONCEPT FURNITURE"
+                                ad={false}
+                                reccomend={true}
+                            />
+                        </Link>
+                        <Link to="/detail">
+                            <Box
+                                photo={CoverImage2}
+                                name="โต๊ะกลาง Luxury"
+                                price={9500}
+                                color={["black", "cyan", "orange"]}
+                                brand="Norhor Design"
+                                ad={true}
+                                reccomend={false}
+                            />
+                        </Link>
+                        <Link to="/detail">
+                            <Box
+                                photo={CoverImage3}
+                                name="โซฟาเข้ามุม 3 ที่นั่ง+สตูล"
+                                price={13500}
+                                color={["black", "yellow"]}
+                                brand="Officemate"
+                                ad={false}
+                                reccomend={false}
+                            />
+                        </Link>
+                    </ContentRow>
+                </>
+            );
+            break;
+        case "Promotion":
+            return (
+                <>
+                    <Title>{title}</Title>
+                    <ContentRow>
+                        <Link to="/detail">
+                            <Box
+                                photo={CoverImage4}
+                                name="DEVIL เก้าอี้โมเดิร์นขาไม้"
+                                price={1690}
+                                color={["red", "cyan"]}
+                                brand="Asfurniturehome "
+                                ad={false}
+                                reccomend={true}
+                            />
+                        </Link>
+                        <Link to="/detail">
+                            <Box
+                                photo={CoverImage5}
+                                name="WINNER FASHION BOX"
+                                price={1190}
+                                color={["red"]}
+                                brand="Index"
+                                ad={true}
+                                reccomend={false}
+                            />
+                        </Link>
+                        <Link to="/detail">
+                            <Box
+                                photo={CoverImage6}
+                                name="ที่นอน Dunlopillo"
+                                price={15210}
+                                color={["black"]}
+                                brand="SB Design Square"
+                                ad={false}
+                                reccomend={false}
+                            />
+                        </Link>
+                    </ContentRow>
+                </>
+            );
+            break;
+    }
 };
 
 export default Content;

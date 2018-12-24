@@ -52,7 +52,7 @@ const FeaturedWrapper = styled.div`
     height: 50vh;
     background-color: #ddd;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
 `;
@@ -97,6 +97,7 @@ const Text = styled.div`
     text-decoration: underline;
     text-align: center;
     margin-top: -3em;
+    margin-bottom: 1em;
 `;
 
 const Header = () => {
