@@ -1,6 +1,6 @@
-import React from "react";
+import React, { Component } from "react";
 import { Input } from "antd";
-import { Redirect } from "react-router-dom";
+import { Redirect, Router } from "react-router-dom";
 import styled from "styled-components";
 
 import Feature1 from "../../../../images/feature1.jpg";
@@ -78,30 +78,32 @@ const Image = styled.img`
     height: auto;
 `;
 
-const Header = () => {
-    return (
-        <>
-            <TopWrapper>
-                <Logo>
-                    <Image src={CoverLogo} />
-                </Logo>
-            </TopWrapper>
-            <SearchBar>
-                <SearchBox
-                    size={10}
-                    placeholder="ค้นหาเฟอร์นิเจอร์"
-                    onSearch={value => <Redirect to="/search" />}
-                    enterButton
-                    size="large"
-                />
-            </SearchBar>
-            <FeaturedWrapper>
-                <Image src={Feature1} />
-                <Image src={Feature2} />
-                <Image src={Feature3} />
-            </FeaturedWrapper>
-        </>
-    );
-};
+class Header extends Component {
+    render() {
+        return (
+            <>
+                <TopWrapper>
+                    <Logo>
+                        <Image src={CoverLogo} />
+                    </Logo>
+                </TopWrapper>
+                <SearchBar>
+                    <SearchBox
+                        size={10}
+                        placeholder="ค้นหาเฟอร์นิเจอร์"
+                        onSearch={value => Router.push(`/search/${value}`)}
+                        enterButton
+                        size="large"
+                    />
+                </SearchBar>
+                <FeaturedWrapper>
+                    <Image src={Feature1} />
+                    <Image src={Feature2} />
+                    <Image src={Feature3} />
+                </FeaturedWrapper>
+            </>
+        );
+    }
+}
 
 export default Header;

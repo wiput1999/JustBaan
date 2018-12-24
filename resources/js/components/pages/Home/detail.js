@@ -29,6 +29,15 @@ const WhiteDot = styled.div`
     border-radius: 50%;
     display: inline-block;
 `;
+const Image = styled.img`
+    height: 450px;
+    width: 100%;
+    margin: 50px 0 0 -60px;
+    @media (max-width: 900px) {
+        margin: auto;
+        width: 70%;
+    }
+`;
 const Detail = props => {
     return (
         <Layout>
@@ -72,14 +81,8 @@ const Detail = props => {
                                     <GreenText xs={12}>150 x 50 x 80</GreenText>
                                 </Row>
                             </InfoCard>
-                            <div>
-                                <img
-                                    alt=""
-                                    src={White_Brusali}
-                                    height={450}
-                                    width={"100%"}
-                                    style={{ marginLeft: -60, marginTop: 50 }}
-                                />
+                            <div style={{ textAlign: "center" }}>
+                                <Image alt="" src={White_Brusali} />
                             </div>
                         </Row>
                         <Row
@@ -104,7 +107,7 @@ const Detail = props => {
                         >
                             Sofa ตัวไหนเหมาะกับบ้านสไตล์คริสต์มาส
                         </h2>
-                        <Row type="flex" justify="space-between">
+                        <Row type="flex" justify="space-around">
                             <Card
                                 hoverable
                                 style={{ width: 400 }}
