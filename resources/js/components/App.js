@@ -6,7 +6,7 @@ import "antd/dist/antd.css";
 import Home from "./pages/Home/index";
 import ProductDetail from "./pages/Home/detail";
 import Content from "./pages/Content/index";
-import ContentDetail from "./pages/Content/detail";
+import ContentDetail from "./pages/ContentDetail/index";
 
 class App extends Component {
     render() {

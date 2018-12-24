@@ -7,6 +7,13 @@ import Box from "./Box";
 
 import Article1 from "../../../../images/article1.jpg";
 import Article2 from "../../../../images/article2.jpg";
+import Article3 from "../../../../images/article3.jpg";
+import Gallery1 from "../../../../images/gallery1.jpg";
+import Gallery2 from "../../../../images/gallery2.png";
+import Gallery3 from "../../../../images/gallery3.png";
+import Gallery4 from "../../../../images/gallery4.png";
+import Gallery5 from "../../../../images/gallery5.png";
+import Gallery6 from "../../../../images/gallery6.png";
 
 const ContentRow = styled.div`
     display: grid;
@@ -26,7 +33,6 @@ const ContentRow = styled.div`
 
 const CenterTitle = styled(Title)`
     width: 100%;
-    max-width: 400px;
     text-align: center;
 `;
 
@@ -51,14 +57,16 @@ const Content = () => {
             </ContentRow>
             <Title>Popular</Title>
             <ContentRow>
-                <Box
-                    photo={Article1}
-                    title="จัดห้องฉลองคริสต์มาสง่ายๆ สไตล์ IKEA"
-                />
-                <Box
-                    photo={Article1}
-                    title="จัดห้องฉลองคริสต์มาสง่ายๆ สไตล์ IKEA"
-                />
+                <Box photo={Article3} title="5 ITEM เสริมดวงประจำปี 2019" />
+            </ContentRow>
+            <CenterTitle>Gallery</CenterTitle>
+            <ContentRow>
+                <Box photo={Gallery1} />
+                <Box photo={Gallery2} />
+                <Box photo={Gallery3} />
+                <Box photo={Gallery4} />
+                <Box photo={Gallery5} />
+                <Box photo={Gallery6} />
             </ContentRow>
         </>
     );
