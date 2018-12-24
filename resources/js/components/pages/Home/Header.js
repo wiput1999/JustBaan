@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { Input } from "antd";
 import { Redirect, Link } from "react-router-dom";
 import styled from "styled-components";

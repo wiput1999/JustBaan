@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Background from "../../../../images/content-banner.png";
 import White_Brusali from "../../../../images/White_brusali.png";
+import detail from "../../../../images/detail.png";
+import detail2 from "../../../../images/detail2.png";
+import detail3 from "../../../../images/detail3.png";
 import sofa from "../../../../images/sofa.jpg";
 import CoverLogo from "../../../../images/logo.png";
 
@@ -90,14 +93,8 @@ const Detail = props => {
                                     <GreenText xs={12}>150 x 50 x 80</GreenText>
                                 </Row>
                             </InfoCard>
-                            <div>
-                                <img
-                                    alt=""
-                                    src={White_Brusali}
-                                    height={450}
-                                    width={"100%"}
-                                    style={{ marginLeft: -60, marginTop: 50 }}
-                                />
+                            <div style={{ textAlign: "center" }}>
+                                <Image alt="" src={White_Brusali} />
                             </div>
                         </Row>
                         <Row
@@ -122,11 +119,11 @@ const Detail = props => {
                         >
                             Sofa ตัวไหนเหมาะกับบ้านสไตล์คริสต์มาส
                         </h2>
-                        <Row type="flex" justify="space-between">
+                        <Row type="flex" justify="space-around">
                             <Card
                                 hoverable
                                 style={{ width: 400 }}
-                                cover={<img alt="" src={sofa} />}
+                                cover={<img alt="" src={detail} />}
                             >
                                 <Card.Meta
                                     title="DEVIL เก้าอี้โมเดิร์นขาไม้"
@@ -136,7 +133,7 @@ const Detail = props => {
                             <Card
                                 hoverable
                                 style={{ width: 400 }}
-                                cover={<img alt="" src={sofa} />}
+                                cover={<img alt="" src={detail2} />}
                             >
                                 <Card.Meta
                                     title="WINNER FASHION BOX"
@@ -146,7 +143,7 @@ const Detail = props => {
                             <Card
                                 hoverable
                                 style={{ width: 400 }}
-                                cover={<img alt="" src={sofa} />}
+                                cover={<img alt="" src={detail3} />}
                             >
                                 <Card.Meta
                                     title="ที่นอน Dunlopillo"

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Row, Col } from "antd";
 import styled from "styled-components";
 
 import Title from "./Title";
@@ -36,24 +35,6 @@ class Content extends Component {
                         brand="IKEA"
                         ad={false}
                         reccomend={true}
-                    />
-                    <Box
-                        photo={CoverImage}
-                        name="Sofabed"
-                        price={5000}
-                        color={["black", "white"]}
-                        brand="IKEA"
-                        ad={false}
-                        reccomend={true}
-                    />
-                    <Box
-                        photo={CoverImage}
-                        name="Sofabed"
-                        price={5000}
-                        color={["black", "orange"]}
-                        brand="IKEA"
-                        ad={false}
-                        reccomend={false}
                     />
                 </ContentRow>
             </div>
